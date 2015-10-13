@@ -11,7 +11,7 @@
     100% Free To use For Personal And Commercial Use.
 
     IN EXCHANGE JUST TELL PEOPLE ABOUT THIS WEBSITE
-   
+
 ========================================================  */
 
 
@@ -23,7 +23,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto); /* GOOGLE FREE FONTS */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Droid Arabic Naskh', 'Roboto', sans-serif;
 }
 
 section {
@@ -83,7 +83,7 @@ section {
         padding-top: 80px;
         font-weight: 900;
         font-size: 100px;
-        font-family: 'Browallia New';
+        font-family: 'Droid Arabic Naskh', 'Browallia New';
     }
 /*SMPLE CLASS TO ADJUST SECTION PADDING & HEIGHT*/
 
