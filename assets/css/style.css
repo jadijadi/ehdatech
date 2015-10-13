@@ -1,0 +1,181 @@
+﻿
+/*=============================================================
+    Authour URL: www.designbootstrap.com
+
+    http://www.designbootstrap.com/
+
+    License: MIT
+
+    http://opensource.org/licenses/MIT
+
+    100% Free To use For Personal And Commercial Use.
+
+    IN EXCHANGE JUST TELL PEOPLE ABOUT THIS WEBSITE
+   
+========================================================  */
+
+
+
+/*================================
+    GENERAL STYLES
+==================================*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto); /* GOOGLE FREE FONTS */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.head-set {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pad-bottom {
+    padding-bottom: 60px;
+}
+/*================================
+    NAVBAR STYLES
+==================================*/
+.navbar-default {
+    background-color: rgb(35, 133, 161);
+    border-color: transparent;
+    color: #fff;
+}
+
+    .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover {
+        color: #fff;
+    }
+
+.navbar-brand {
+    padding: 0px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color:#fff;
+}
+/*================================
+    HOME SECTION STYLES
+==================================*/
+
+/*STYLE OF BACKGROUND IMAGE*/
+#home {
+    background: url(../img/home.jpg) no-repeat center center; /*Full Witdth background image*/
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    min-height: 600px;
+}
+    /*STYLE FOR OVERLAY CLASS - WHICH IS ABOVE IMAGE WITH OPACITY/TRANSPARENCY 0.75*/
+    #home .overlay {
+        padding-top: 90px;
+        background-color: rgba(35, 133, 161,0.75); /*.75 opacity of the color so that background image is visible*/
+        min-height: 600px;
+        color: #fff;
+    }
+
+    #home h1 {
+        padding-top: 80px;
+        font-weight: 900;
+        font-size: 100px;
+        font-family: 'Browallia New';
+    }
+/*SMPLE CLASS TO ADJUST SECTION PADDING & HEIGHT*/
+
+/*CLASS TO FORMAT TEXT*/
+.p-cls {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+/*======================================
+    PARALLAX LIKE / STATS SECTION STYLES
+=========================================*/
+
+.parallax-like {
+    background: url(../img/stats.jpg) no-repeat center center; /* DEFINE IMAGE PATH CAREFULLY*/
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+    .parallax-like .overlay {
+        min-height: 200px;
+        background: rgba(35, 133, 161,0.9);
+        font-size: 40px;
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+
+/*================================
+    PORTFOLIO / WORK SECTION STYLES
+==================================*/
+.portfolio-item img:hover { /* POSTFOLIO IMAGE BIG ON HOVER */
+    cursor: pointer;
+    -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    z-index: 1;
+}
+
+/*================================
+    VIDEO SECTION STYLES
+==================================*/
+#video-sec {
+    color: #fff;
+    text-align: center;
+}
+
+    #video-sec .overlay {
+        background-color: rgba(0, 0, 0, 0.85);
+        min-height: 300px;
+        color: #fff;
+    }
+
+    #video-sec h1 {
+        padding-top: 80px;
+        font-size: 50px;
+        font-weight: 900;
+        padding-bottom: 30px;
+    }
+/*================================
+    CLIENTS SECTION STYLES
+==================================*/
+#clients {
+    background-color:#f4f4f4;
+    padding-bottom:50px;
+    padding-top:50px;
+}
+    #clients img {
+        opacity:0.5;
+        cursor:pointer;
+    }
+        #clients img:hover {
+            opacity:1;
+        }
+/*================================
+    FOOTER SECTION STYLES
+==================================*/
+
+footer {
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 900;
+    background-color: rgb(35, 133, 161);
+    color: #fff;
+}
+
+    footer a, footer a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
