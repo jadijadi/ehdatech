@@ -21,11 +21,12 @@
 ==================================*/
 
 @import url(http://fonts.googleapis.com/css?family=Roboto); /* GOOGLE FREE FONTS */
-
+*{
+	/*line-height:120%;*/
+}
 body {
     font-family: 'Droid Arabic Naskh', 'Roboto', sans-serif;
 }
-
 section {
     padding-top: 80px;
     padding-bottom: 120px;
@@ -47,16 +48,42 @@ section {
     border-color: transparent;
     color: #fff;
 }
-
-    .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover {
-        color: #fff;
-    }
-
+.navbar-default .navbar-nav > li > a{
+	line-height: 25px;
+	color:#fff;
+}
+.navbar-default .navbar-nav > li > a:hover{
+	background:#116a83;
+	color:#fff;
+}
+.navbar-default .navbar-nav > li > a:active{
+	background:#116a83;
+	color:#fff;
+}
+.navbar-default .navbar-nav > li > a:visited{
+	color:#fff;
+}
 .navbar-brand {
     padding: 0px;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color:#fff;
+}
+.navbar-header a h3{
+	line-height:110%;
+	margin-top: 17px;
+	color: #fff;
+	text-decoration: none;
+	
+}
+.navbar-header a:hover{
+	text-decoration: none;
+}
+.navbar-header a:active{
+	text-decoration: none;
+}
+.navbar-header a:visited{
+	text-decoration: none;
 }
 /*================================
     HOME SECTION STYLES
@@ -80,10 +107,16 @@ section {
     }
 
     #home h1 {
-        padding-top: 80px;
+        padding-top: 90px;
         font-weight: 900;
-        font-size: 100px;
+		line-height: 130%;
+        font-size: 83px;
+        margin-bottom: 50px;
         font-family: 'Droid Arabic Naskh', 'Browallia New';
+    }
+    #home .p-cls {
+        margin-top: 20px;
+        line-height:110%;
     }
 /*SMPLE CLASS TO ADJUST SECTION PADDING & HEIGHT*/
 
@@ -92,7 +125,14 @@ section {
     padding-top: 30px;
     padding-bottom: 40px;
 }
-
+#services div p{
+	line-height:170%;
+}
+@media (max-width:768px){
+	.navbar-header a h3{
+		margin-right:20px;
+	}
+}
 /*======================================
     PARALLAX LIKE / STATS SECTION STYLES
 =========================================*/
@@ -113,6 +153,16 @@ section {
         padding-bottom: 60px;
         padding-top: 60px;
     }
+    .parts div{
+		text-align:center;
+    }
+    .parts div strong{
+		font-size: 43px;
+    }
+    .parts div p{
+		font-size: 22px;
+		margin-top:17px;
+    }
 
 /*================================
     PORTFOLIO / WORK SECTION STYLES
@@ -129,7 +179,12 @@ section {
     transform: scale(1.1, 1.1);
     z-index: 1;
 }
-
+.portfolio-item div h5{
+	margin-top:15px;
+}
+#works div p{
+	line-height:165%;
+}
 /*================================
     VIDEO SECTION STYLES
 ==================================*/
@@ -142,14 +197,31 @@ section {
         background-color: rgba(0, 0, 0, 0.85);
         min-height: 300px;
         color: #fff;
+        padding-bottom:40px;
     }
 
-    #video-sec h1 {
-        padding-top: 80px;
+    #video-sec h3 {
+        padding-top: 45px;
         font-size: 50px;
         font-weight: 900;
         padding-bottom: 30px;
+    line-height: 130%;
     }
+    #video-sec h4 {
+        line-height:150%;
+    }
+/*================================
+    CONTACT SECTION STYLES
+==================================*/    
+    #contact h3{
+		font-size: 40px;
+    }
+    #contact p{
+		line-height:150%;
+    }
+    
+    
+    
 /*================================
     CLIENTS SECTION STYLES
 ==================================*/
