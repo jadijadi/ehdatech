@@ -21,9 +21,7 @@
 ==================================*/
 
 @import url(http://fonts.googleapis.com/css?family=Roboto); /* GOOGLE FREE FONTS */
-*{
-	/*line-height:120%;*/
-}
+
 body {
     font-family: 'Droid Arabic Naskh', 'Roboto', sans-serif;
 }
@@ -43,18 +41,23 @@ section {
 /*================================
     NAVBAR STYLES
 ==================================*/
+
 .navbar-default {
-    background-color: rgb(35, 133, 161);
+    background-color: #00b2f8;
     border-color: transparent;
     color: #fff;
 }
 .navbar-default .navbar-nav > li > a{
 	line-height: 25px;
 	color:#fff;
+    font-size: 1.4rem;
+    transition: 0.2s;
 }
 .navbar-default .navbar-nav > li > a:hover{
-	background:#116a83;
+	background:#05d9f5;
 	color:#fff;
+    font-size: 1.8rem;
+    box-shadow: 1px 1px 10px #0000005b;
 }
 .navbar-default .navbar-nav > li > a:active{
 	background:#116a83;
@@ -69,13 +72,19 @@ section {
 .navbar-default .navbar-toggle .icon-bar {
     background-color:#fff;
 }
+
 .navbar-header a h3{
 	line-height:110%;
 	margin-top: 17px;
-	color: #fff;
+	color: #3af700;
 	text-decoration: none;
-	
+    transition: 0.4s;
 }
+
+.navbar-header a h3:hover{
+    color: #c8ff00;
+}
+
 .navbar-header a:hover{
 	text-decoration: none;
 }
@@ -101,7 +110,7 @@ section {
     /*STYLE FOR OVERLAY CLASS - WHICH IS ABOVE IMAGE WITH OPACITY/TRANSPARENCY 0.75*/
     #home .overlay {
         padding-top: 90px;
-        background-color: rgba(35, 133, 161,0.75); /*.75 opacity of the color so that background image is visible*/
+        background-color: rgba(35, 134, 161, 0.6); /*.75 opacity of the color so that background image is visible*/
         min-height: 600px;
         color: #fff;
     }
@@ -133,6 +142,17 @@ section {
 		margin-right:20px;
 	}
 }
+
+.fa-heart, .fa-mobile, .fa-phone{
+    color: rgb(30, 186, 238);
+    transition: 0.25s;
+}
+
+.fa-heart:hover, .fa-mobile:hover, .fa-phone:hover{
+    color: rgba(30, 186, 238, 0.6);
+    transform: translateY(-5px);
+}
+
 /*======================================
     PARALLAX LIKE / STATS SECTION STYLES
 =========================================*/
@@ -148,7 +168,7 @@ section {
 
     .parallax-like .overlay {
         min-height: 200px;
-        background: rgba(35, 133, 161,0.9);
+        background: rgba(35, 133, 161,0.6);
         font-size: 40px;
         padding-bottom: 60px;
         padding-top: 60px;
@@ -168,16 +188,19 @@ section {
     PORTFOLIO / WORK SECTION STYLES
 ==================================*/
 .portfolio-item img{
-    transition-duration: 0.3s;
-    -webkit-transition-duration: 0.3s; /* Safari */
+    transition: 0.2s ease-out;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.411);
+    filter: grayscale(40%);
 }
 
 .portfolio-item img:hover { /* POSTFOLIO IMAGE BIG ON HOVER */
-    cursor: pointer;
-    -webkit-transform: scale(1.1, 1.1);
-    -ms-transform: scale(1.1, 1.1);
-    transform: scale(1.1, 1.1);
+    cursor: default;
+    transform: scale(1.04, 1.04);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.267);
     z-index: 1;
+    filter: grayscale(0%);
+
+
 }
 .portfolio-item div h5{
 	margin-top:15px;
